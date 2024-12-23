@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Estudiante de Desarrollo de Aplicaciones Multiplataforma",
+    company: "MEDAC",
+    description:
+      "Me considero un estudiante polifacético con experiencia en varios lenguajes de programación. He desarrollado proyectos en una variedad de lenguajes, lo que me ha permitido adquirir habilidades versátiles y una comprensión profunda de diferentes paradigmas de programación.facético en varios lenguajes de programación, ya que he hecho proyectos en variedad de lenguajes.",
+    link: "#",
+  },
+  {
+    date: "Junio 2024 - Septiembre 2024",
+    title: "Desarrollador backend JS",
+    company: "VP-Connect",
+    description:
+      "Desarrollador durante tres meses en una variedad de proyectos web y móviles utilizando JavaScript y TypeScript. Experiencia en el uso de MongoDB como base de datos para almacenar y gestionar la información de los proyectos. Participación en el desarrollo de aplicaciones de alta calidad y rendimiento, aplicando buenas prácticas de codificación.",
+  },
+  {
+    date: "marzo 2023 - Junio 2023",
+    title: "Desarrollador Smalltalk en Pharo",
+    company: "E-Racuni (Eslovenia)",
+    description:
+      "Desarrollador durante tres meses en multitud de proyectos hechos en Smalltalk utilizando pharo, este periodo fueron las prácticas de Técnico de Sistemas Microinformáticos y redes, las realizé en EsloveniaDesarrollador durante tres meses en multitud de proyectos hechos en Smalltalk utilizando Pharo. Participé en el desarrollo de aplicaciones de gestión y automatización de procesos durante las prácticas de Técnico de Sistemas Microinformáticos y Redes, las cuales realicé en Eslovenia. Adquirí experiencia en el uso de herramientas y metodologías ágiles para el desarrollo de software. Trabajé en un equipo internacional, lo que me permitió mejorar mis habilidades de comunicación y colaboración."
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
